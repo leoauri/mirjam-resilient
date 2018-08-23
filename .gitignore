@@ -1,0 +1,21 @@
+# Dotenv
+.env
+!.env.example
+
+# Application
+!wp-content/mu-plugins/*
+wp-content/plugins/*
+wp-content/upgrade
+wp-content/uploads/*
+
+# Preinstalled Themes
+wp-content/themes/twentyfifteen/*
+wp-content/themes/twentysixteen/*
+wp-content/themes/twentyseventeen/*
+
+# Language Files
+wp-content/languages/*
+
+# Golden Silence Files
+wp-content/index.php
+wp-content/themes/index.php
