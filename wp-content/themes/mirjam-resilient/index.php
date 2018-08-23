@@ -21,8 +21,10 @@
 			</div>
 		</header>
 		<main id="main" class="site-main" role="main">
-			<!-- Page title -->
-			<!-- Page content -->
+			<div id="content">
+				<!-- Page title -->
+				<!-- Page content -->
+			</div>
 		</main>
 	</div><!-- #page -->
 </body></html>
