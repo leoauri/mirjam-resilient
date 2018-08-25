@@ -12,11 +12,16 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'mirjamresilient' ); ?></a>
 		<header id="masthead" class="site-header" role="banner">
-			<!-- Header picture -->
-			<!-- Site title -->
-			<div class="navigation-top">
+			<img src="<?php echo(get_stylesheet_directory_uri()); ?>/assets/image/rays-still.jpg" />
+			<h1>
+				<?php echo(get_bloginfo()); ?>
+			</h1>
+			<div class="upcoming">
+				<!-- Next event -->
+				<!-- Calendar link -->
+			</div>
+			<div class="navigation">
 				<!-- Navigation menu -->
 			</div>
 		</header>
