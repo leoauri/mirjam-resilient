@@ -1,0 +1,11 @@
+{
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/leoauri/wp-event-calendar"
+		}
+	],
+	"require": {
+		"stuttter/wp-event-calendar": "dev-master"
+	}
+}
