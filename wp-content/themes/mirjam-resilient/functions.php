@@ -1,9 +1,19 @@
 <?php
+namespace Mirjamresilient;
 /**
  * Mirjam Resilient
  **/
 
-function mirjamresilient_setup() {
+// Autoload all our class definitions
+$classfiles = new \FilesystemIterator( get_stylesheet_directory() . '/classes', \FilesystemIterator::SKIP_DOTS );
+foreach ( $classfiles as $file )
+{
+	/** @noinspection PhpIncludeInspection */
+	! $file->isDir() and include $file->getRealPath();
+}
+
+
+function setup() {
 	/*
 	 * Let WordPress manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
@@ -21,4 +31,4 @@ function mirjamresilient_setup() {
 	load_theme_textdomain( 'mirjamresilient', get_template_directory() . '/languages' );
 
 }
-add_action( 'after_setup_theme', 'mirjamresilient_setup' );
+add_action( 'after_setup_theme', 'Mirjamresilient\setup' );
