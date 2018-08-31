@@ -43,7 +43,11 @@ namespace Mirjamresilient;
 				<a class="upcoming-events" href="<?php echo get_site_url(null, '/events/'); ?>">All upcoming events &#8594;</a>
 			</div>
 			<div class="navigation">
-				<!-- Navigation menu -->
+				<?php wp_nav_menu(array(
+					'theme_location' => 'navigation-menu',
+					'container_class' => 'pages-navigation'
+				)); ?>
+				<?php (new PiecesNavigation)->echoMenu(); ?>
 			</div>
 		</header>
 		<main id="main" class="site-main" role="main">

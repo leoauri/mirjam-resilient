@@ -32,3 +32,13 @@ function setup() {
 
 }
 add_action( 'after_setup_theme', 'Mirjamresilient\setup' );
+
+
+function register_menus() {
+	register_nav_menus(
+		array(
+			'navigation-menu' => __( 'Pages Navigation Menu' )
+		)
+	);
+}
+add_action( 'init', 'Mirjamresilient\register_menus' );

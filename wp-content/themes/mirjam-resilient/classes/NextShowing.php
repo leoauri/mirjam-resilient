@@ -1,5 +1,8 @@
 <?php
 namespace Mirjamresilient;
+/**
+ * Mirjam Resilient
+ **/
 
 // Exit if accessed directly
 defined( 'ABSPATH' ) || exit;
