@@ -23,7 +23,7 @@ class PiecesNavigation {
 		foreach ($this->pieces as $piece) {
 			$output .= '<li class="menu-item">';
 			$output .= '<a href="' . get_permalink( $piece->ID ) . '">' . $piece->post_title . '</a>';
-			$output .= '</li>';
+			$output .= '</li>' . "\n";
 		}
 		$output .= '</ul></div>';
 
