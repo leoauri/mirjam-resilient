@@ -7,7 +7,7 @@ namespace Mirjamresilient;
 
 get_header(); ?>
 <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'mirjamresilient' ); ?></a>
-<header>
+<header id="masthead" class="site-header" role="banner">
 	<h1>
 		<?php echo(get_bloginfo()); ?>
 	</h1>
@@ -22,5 +22,3 @@ get_header(); ?>
 		?>
 	</div>
 </main>
-
-<?php  ?>
