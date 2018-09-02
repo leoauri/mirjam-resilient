@@ -35,19 +35,7 @@ get_header(); ?>
 
 				<a class="upcoming-events" href="<?php echo get_site_url(null, '/events/'); ?>">All upcoming events &#8594;</a>
 			</div>
-			<div class="navigation">
-				<?php wp_nav_menu(array(
-					'theme_location' => 'navigation-menu',
-					'container_class' => 'pages-navigation'
-				)); ?>
-				<?php (new PiecesNavigation)->echoMenu(); ?>
-			</div>
+			<?php get_template_part('template-parts/navigation'); ?>
 		</header>
-		<main id="main" class="site-main" role="main">
-			<div id="content">
-				<!-- Page title -->
-				<!-- Page content -->
-			</div>
-		</main>
 	</div><!-- #page -->
 </body></html>
